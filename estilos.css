@@ -1,0 +1,114 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+header{
+    display: flex;
+    flex-grow: 1;
+    background-color: #191e2b;
+    width: 100%;
+    justify-content: center;
+    color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+aside {
+    display: flex;
+    flex-grow: 5;
+    background-color: #252935;
+    width: 15%;
+    color: aliceblue;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.alinear-contenido {
+    display: flex;
+    justify-content: center;
+    al
+
+}
+
+.contenedor-main {
+    background-color: #545863;
+}
+
+.contenido-web {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    background-color: #545863;
+    
+}
+
+main {
+    display: flex;
+    flex-grow: 8;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.canva-meme {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 50%;
+    flex-direction: column;
+    
+}
+
+.generador {
+    background-color: black;
+    width: 100%;
+    flex-grow: 1;
+    background-size: cover;
+}
+
+.estilo-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    margin: 5px;
+}
+  
+button:hover {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+}
