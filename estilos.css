@@ -2,11 +2,91 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     width: 100%;
     flex-wrap: wrap;
 }
+
+.dark-mode header {
+    color: #eeeeee;
+    background-color: #191e2b;
+  }
+  
+  .dark-mode main {
+    background-color: #30343f;
+  }
+  
+  .dark-mode aside {
+    color: #eeeeee;
+    background-color: #252935;
+  }
+  
+  .dark-mode .button-imagen {
+    color: white;
+  }
+  
+  .dark-mode .url:focus {
+    box-shadow: 0px 0px 7px #9b00ff;
+    transition: 0.5s ease-out;
+  }
+  
+  .dark-mode .change-color:focus,
+  .change-color:active {
+    box-shadow: 0px 0px 7px #9b00ff;
+    transition: 0.5s ease-out;
+  }
+  
+  .dark-mode li:hover {
+    background-color: #4e5565;
+    cursor: pointer;
+  }
+  
+  .dark-mode li:active {
+    background-color: #4e5565;
+  }
+  
+  /* light mode */
+  
+  .light-mode header {
+    color: #424242;
+    background-color: #e0e0e0;
+  }
+  
+  .light-mode main {
+    background-color: #eeeeee;
+  }
+  
+  .light-mode aside {
+    color: #424242;
+    background-color: #e4e3f2;
+  }
+  
+  .light-mode .change-color {
+    color: #ffffff;
+    background-color: #bdb0b0;
+  }
+  
+  .light-mode .change-color:hover {
+    background-color: #bea7e9;
+  }
+  
+  .light-mode .change-color:focus {
+    background-color: #bea7e9;
+  }
+  .light-mode .button-filtros {
+    color: #000000;
+  }
+  
+  
+  .light-mode li:hover {
+    background-color: #bdbdbd;
+    cursor: pointer;
+  }
+  
+  .light-mode li:active {
+    background-color: #bdbdbd;
+  }
 
 header{
     display: flex;
@@ -21,22 +101,34 @@ header{
     
 }
 
+
+.url-input{
+    background-color: #3f4455;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 10px;
+}
+
+
+
 aside {
     display: flex;
     flex-grow: 5;
     background-color: #252935;
-    width: 15%;
+    flex-basis: 100px;
     color: aliceblue;
-    align-items: center;
+    padding: 20px;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;    
+}
+
+.aside-texto {
+  display: none;
 }
 
 .alinear-contenido {
     display: flex;
     justify-content: center;
-    al
 
 }
 
@@ -47,9 +139,9 @@ aside {
 .contenido-web {
     display: flex;
     flex-direction: column;
-    width: 85%;
     align-items: center;
     background-color: #545863;
+    flex-basis: 80%;
     
 }
 
@@ -59,6 +151,7 @@ main {
     width: 100%;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    flex-basis: auto;
 }
 
 .canva-meme {
@@ -75,7 +168,9 @@ main {
     width: 100%;
     flex-grow: 1;
     background-size: cover;
+    
 }
+
 
 .estilo-button {
     display: flex;
@@ -112,3 +207,155 @@ button:hover {
                 0 0 50px #008cff,
                 0 0 100px #008cff;
 }
+
+.button-descarga {
+    margin: 30px;
+}
+
+.container-filtros {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    
+}
+
+.filtros {
+    margin: 9px;
+    padding: 8px;
+}
+
+.opcion-value {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    
+}
+
+.container-color {
+    background-color: #565656;
+    border-radius: 2px;
+
+}
+
+.div-input-color{
+    display: flex;
+   justify-content: start;
+}
+.clase-titulos {
+    display: flex;
+   justify-content: start;
+}
+
+.main-top {
+    color: #000;
+    background-color: white;
+    min-height: 100px;
+    width: 100%;
+    margin-bottom: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 1000;
+    line-height: 1;
+  }
+  
+  .main-bottom {
+    color: #000;
+    background-color: white;
+    min-height: 100px;
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 1000;
+    line-height: 1;
+  }
+  
+
+.boxes {
+    width: 32%;
+    height: 35px;
+    background-color: #30343f;
+    border: 1px solid #30343f;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .boxes:hover {
+    background-color: #4e5565;
+    transition: 0.5s ease-out;
+  }
+  
+
+  .spacing-number {
+    width: 95%;
+    height: 35px;
+    background-color: #30343f;
+    border: 1px solid #30343f;
+    color: white;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+  
+  .spacing-number:hover {
+    background-color: #4e5565;
+    transition: 0.5s ease-out;
+  }
+  
+  /* responsive time */
+  
+  /* responsive boton hide */
+  
+  @media screen and (min-width: 1300px) {
+    .button-close {
+      display: none;
+    }
+  }
+  
+  /* responsive max 1300px */
+  
+  @media screen and (max-width: 1550px) {
+    /* aside img & text*/
+  
+    aside {
+      width: 30%;
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    /* aside img & text*/
+  
+    aside {
+      width: 40%;
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    /* aside img & text*/
+  
+    aside {
+      width: 50%;
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    /* aside */
+  
+    aside {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1000;
+    }
+  }
