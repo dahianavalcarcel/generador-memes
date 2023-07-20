@@ -4,7 +4,7 @@ body{
     justify-content: center;
     height: 100vh;
     margin: 0;
-    
+    height: 100vh;
     flex-wrap: wrap;
 }
 
@@ -98,7 +98,6 @@ header{
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    
 }
 
 
@@ -112,21 +111,32 @@ header{
 
 
 aside {
-    display: flex;
-    flex-grow: 5;
-    background-color: #252935;
-    flex-basis: 100px;
-    color: aliceblue;
-    padding: 20px;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;    
+  font-family: 'Roboto', sans-serif;
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--color-panel);
+  padding: 30px 15px;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: -10px 10px 100px 5px rgba(0, 0, 0, 0.3);
+  z-index: 10;  
 }
 
-.aside-texto {
+.aside-texto{
   display: none;
 }
 .aside-imagen{
   display: block;
+}
+
+
+aside::-webkit-scrollbar-thumb {
+  background-color: transparent; 
 }
 
 .alinear-contenido {
@@ -144,8 +154,8 @@ aside {
     flex-direction: column;
     align-items: center;
     background-color: #545863;
-    flex-basis: 80%;
-    
+    width: 100%;
+
 }
 
 main {
@@ -169,6 +179,7 @@ main {
 .generador {
     background-color: black;
     width: 100%;
+    height: 100vh;
     flex-grow: 1;
     background-size: cover;
     
@@ -210,6 +221,7 @@ button:hover {
                 0 0 50px #008cff,
                 0 0 100px #008cff;
 }
+
 
 .button-descarga {
     margin: 30px;
@@ -262,8 +274,16 @@ button:hover {
     align-items: center;
     font-size: 30px;
     font-weight: 900;
-    z-index: 1000;
+    z-index: 1;
     line-height: 1;
+  }
+
+  .textalign-font{
+    padding: 6px;
+  }
+
+  .button-check{
+    margin-top: 14px;
   }
   
   .main-bottom {
@@ -277,7 +297,7 @@ button:hover {
     align-items: center;
     font-size: 30px;
     font-weight: 900;
-    z-index: 1000;
+    z-index: 1;
     line-height: 1;
   }
   
@@ -290,6 +310,7 @@ button:hover {
     border-radius: 4px;
     color: white;
     font-size: 15px;
+    padding: 0 4px 0 4px;
   }
   
   .boxes:hover {
@@ -316,42 +337,4 @@ button:hover {
   /* responsive time */
   
   
-  /* responsive max 1300px */
   
-  @media screen and (max-width: 1550px) {
-    /* aside img & text*/
-  
-    aside {
-      width: 30%;
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 1300px) {
-    /* aside img & text*/
-  
-    aside {
-      width: 40%;
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 1100px) {
-    /* aside img & text*/
-  
-    aside {
-      width: 50%;
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 900px) {
-    /* aside */
-  
-    aside {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      z-index: 1000;
-    }
-  }
